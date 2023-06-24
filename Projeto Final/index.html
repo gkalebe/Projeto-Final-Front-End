@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tartaruga</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="javascript.js"></script>
+
+
+</head>
+<body>
+    
+    <header>
+
+        <nav class="nav">
+            <div class="container">
+                <div class="logo">
+                    <a href="pag4.html">Tartarugas Marinhas</a>
+                </div>
+
+                <div id="mainListDiv" class="main_list">
+                    <ul class="navlinks">
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="pag2.html">Espécies</a></li>
+                        <li><a href="pag3.html">Projeto Tamar</a></li>
+                        <li><a href="#"></a></li>
+                    </ul>
+                </div>
+                <span class="navTrigger">
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                </span>
+            </div>
+        </nav>
+    
+        <section class="home">
+
+        </section>
+        <div style="height: 1000px">
+                <h2 class="myH2">Tartarugas marinhas</h2>
+                 <p class="myP">
+                    
+                     As tartarugas marinhas são répteis que apareceram em nosso planeta aproximadamente no Jurássico, sendo sua história muito antiga. Pertencem à Classe Reptilia, Ordem Testudines e Subordem Cryptodira e possuem membros que muito se assemelham a nadadeiras, auxiliando-as no momento do nado.
+                    <br><br>
+                     São animais que respiram através de pulmões, porém conseguem ficar grandes períodos dentro da água, “prendendo a respiração”.<br><br> São seres que possuem uma ótima capacidade de orientar-se, destacando-se a habilidade da fêmea de localizar a praia onde nasceu para realizar a desova, único momento em que esse animal sai da água. No Brasil, a desova ocorre principalmente nos meses de setembro e março, para aquelas espécies de tartaruga que botam seus ovos no continente, e entre dezembro e maio, para aquelas que realizam o processo nas ilhas oceânicas.
+                        
+                </p>
+                <figure>
+                    <img class="tipos" src="img/marinha.gif" width="50%">
+                    <figcaption>(Foto: divulgação)</figcaption>
+                </figure>
+                <p class="myP">
+                    As tartarugas marinhas reproduzem-se principalmente nas regiões tropicais, entretanto, são encontradas desde os trópicos até as regiões subpolares. Elas vivem em diferentes ambientes durante seu ciclo de vida, sendo, portanto, altamente migratórias. Todas são ovíparas e não cuidam de seus filhotes quando eles nascem, não possuindo, assim, cuidado parental.
+                    <br><br>
+                    As tartarugas marinhas apresentam uma alimentação variada, que muda de acordo com a espécie e com a idade. Elas alimentam-se principalmente de esponjas, cnidários, algas, plantas aquáticas, moluscos, crustáceos, peixes, entre outros seres, e servem de alimento para diversos tipos de animais tanto marinhos quanto terrestres. Elas são, portanto, importantes para a cadeia alimentar.
+                    <br><br>
+                    Existem no mundo apenas sete espécies de tartarugas marinhas, já, no Brasil, são encontradas apenas cinco. Infelizmente, todas estão ameaçadas de extinção. A ameaça é principalmente o homem, que polui os oceanos, destrói as áreas de desova e pesca esses animais. Além disso, elas também enfrentam sofrem as consequências das mudanças climáticas.
+                </p><br>
+                <p class="myP">Todas as tartarugas, tanto aquáticas como terrestres, estão localizadas dentro da ordem Testudines, que é um grupo muito antigo, embora possuam diferenças anatômicas significativas com os registros fósseis encontrados. As tartarugas são animais peculiares, geralmente inofensivos, que sofrem as consequências do impacto das ações humanas, que colocam muitas espécies em riscos significativos.
+                <br>
+               </p><br><br><br>
+               <br><br><br><br><br><br><br>
+
+                
+        </div>
+        
+        <script>
+            $(window).scroll(function() {
+                if ($(document).scrollTop() > 50) {
+                    $('.nav').addClass('affix');
+                    console.log("OK");
+                } else {
+                    $('.nav').removeClass('affix');
+                }
+            });
+        </script>
+
+    </header>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <ul class="footer-nav">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="pag2.html">Espécies</a></li>
+                <li><a href="pag3.html">Projeto Tamar</a></li>
+            </ul>
+            <div class="social-media">
+                <a href="https://www.facebook.com/ProjetoTamar/?locale=pt_BR" class="social-icon"><i data-feather="facebook"></i></a>
+                <a href="https://twitter.com/Projeto_Tamar" class="social-icon"><i data-feather="twitter"></i></a>
+                <a href="https://www.instagram.com/projeto_tamar_oficial/" class="social-icon"><i data-feather="instagram"></i></a>
+            </div>
+            
+            <script>
+                feather.replace();
+            </script>
+            
+        </div>
+    </footer>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+      <script src="javascript.js"></script>
+      <script>
+          $(window).scroll(function() {
+              if ($(document).scrollTop() > 50) {
+                  $('.nav').addClass('affix');
+                  console.log("OK");
+              } else {
+                  $('.nav').removeClass('affix');
+              }
+          });
+  
+          $(window).scroll(function() {
+              if ($(window).scrollTop() + $(window).height() == $(document).height()) {
+                  $('footer').addClass('fixed-footer');
+              } else {
+                  $('footer').removeClass('fixed-footer');
+              }
+          });
+          
+      </script>
+
+<script>
+  window.addEventListener('scroll', function() {
+    var footer = document.querySelector('.footer');
+    var images = document.querySelectorAll('img');
+    var footerRect = footer.getBoundingClientRect();
+    var isOverlapping = false;
+    
+    images.forEach(function(image) {
+        var imageRect = image.getBoundingClientRect();
+        if (footerRect.bottom > imageRect.top && footerRect.top < imageRect.bottom) {
+            isOverlapping = true;
+        }
+    });
+    
+    if (isOverlapping) {
+        footer.style.backgroundColor = 'transparent';
+    } else {
+        footer.style.backgroundColor = ''; 
+    }
+});
+</script>
+      
+</body>
+</html>
